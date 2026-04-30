@@ -1,5 +1,12 @@
 ﻿def is_prime(n: int) -> bool:
-    """Return True when n is a prime number, otherwise return False."""
+    """Verifica se um número é primo.
+
+    Args:
+        n (int): O número inteiro a ser verificado.
+
+    Returns:
+        bool: True se o número for primo, False caso contrário.
+    """
     if n <= 1:
         return False
     for divisor in range(2, int(n**0.5) + 1):
